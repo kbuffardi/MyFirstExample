@@ -18,7 +18,15 @@ int main()
     cout << "Multiplication: " << x * y << endl;
     cout << "Division: " << x / y << endl;
     cout << "Remainder: " << x % y << endl;
-    cout << "Square Root: " << sqrt(x) << endl;
+    if( x >= 0) {
+      cout << "Square Root of " << x << ": " sqrt(x) << endl;
+    }
+    if( y >= 0) {
+      cout << "Square Root of " << y << ": " sqrt(y) << endl;
+    }
+    if( x < 0 || y < 0) {
+      cout << "Square Root of a negative number is not a real number." << endl;
+    }
     cout << "Square: " << pow(x, y) << endl;
 
     return 0;
